@@ -1,0 +1,70 @@
+🧑 User: 
+        You're a professional family assistant who helps busy moms manage their day. 
+        Generate a detailed, realistic, and fun schedule based on this user request: "my plan on Monday".
+        Make the schedule specific for the morning.
+
+        Use the following format:
+        ## [Title of the Plan]
+
+        **Goal:** [Short 1-sentence purpose of this block]
+
+        **Time** | **Activity** | **Details/Tips**
+        -------- | ------------ | ----------------
+        6:00 AM  | Example Task | Short description...
+
+        Make sure to:
+        - Balance structure with flexibility.
+        - Include both responsibilities and bonding time.
+        - Use times in 15–30 minute blocks.
+        
+
+🤖 Agent:
+## Monday Morning Power Hour & Family Fuel-Up
+
+**Goal:** To start the week strong with an efficient and loving morning routine that sets everyone up for success.
+
+**Time** | **Activity** | **Details/Tips**
+-------- | ------------ | ----------------
+6:00 AM  | Quiet Time/Personal Prep | Wake up before the kids. Enjoy a quiet cup of coffee,  meditate, or do a quick workout. This "me time" is crucial for your energy levels. Prep your outfit and a quick lunch for yourself if possible.
+6:30 AM  | Kids' Wake-Up & Snuggles | Gently wake the kids. Allow for some cuddle time or reading a book in bed before the rush begins. This fosters connection and eases them into the day.
+6:45 AM  | Bathroom Blitz | Encourage everyone to use the bathroom and brush their teeth.  A small reward chart for timely bathroom breaks can be helpful for younger children.
+7:00 AM  | Dress & Tidy Bedrooms |  Make getting dressed a game for younger kids (who can get dressed fastest?). Assign older kids to tidy their own spaces. Put on a fun, upbeat playlist.
+7:15 AM  | Breakfast Connection | Sit down together for a quick and nutritious breakfast.  Prep easy options like overnight oats, yogurt parfaits, or whole-wheat toast with peanut butter the night before.  Chat about the day ahead. This doesn't have to be elaborate, just a moment of shared presence.
+7:45 AM  | Pack Lunches & Bags |  While the kids finish breakfast, quickly pack lunches (ideally prepped the night before) and ensure backpacks and work bags are organized.  Have a designated "launchpad" area by the door for bags and other essentials.
+8:00 AM  | Out the Door/School Run |  Depending on school start times, either begin the school run or transition to focused work/business time if kids are at home with other care.  Ensure everyone has what they need.  A goodbye hug and kiss ritual can make departures smoother.
+8:15 AM - 8:45 AM | Flexible Buffer | This time block allows for unexpected delays, last-minute forgotten items, or a quick catch-up on emails before diving into work. It can also be used for a quick walk with the dog if school drop-off allows or simply some focused breathing to transition to work mode.
+
+**Flexibility Note:** This schedule is a guide. Adjust the timings to match your family’s specific needs and schedules.  The key is to establish consistent routines that make mornings smoother and less stressful. Remember to be kind to yourself – some days will run more smoothly than others!
+
+This schedule is a suggestion and can be adapted to fit individual needs and family dynamics.  The key is consistency and realistic expectations.
+
+**Weekday Schedule:**
+
+* **6:00 AM - 7:00 AM: Self-Care/Me Time:**  Wake up before the rest of the family.  Use this time for exercise, meditation, journaling, or simply enjoying a cup of coffee in peace.
+* **7:00 AM - 8:00 AM: Family Time:**  Help kids get ready for school, have breakfast together, and connect before the day starts.
+* **8:00 AM - 5:00 PM: Work Block:**  This is a large block, and will likely need to be broken up with short breaks and lunch.  Schedule focused work during times of highest productivity.  Consider time blocking specific tasks within this block.
+* **5:00 PM - 6:00 PM: Family Time:**  Dinner preparation and family dinner.  This is crucial connection time.  Minimize distractions like phones and TV.
+* **6:00 PM - 7:00 PM: Family Time/Kids' Activities:** Homework help, bath time, reading, or other family activities.
+* **7:00 PM - 8:00 PM:  Family Wind-Down/Bedtime Routine:**  Prepare for the next day, read with kids, and establish a calming bedtime routine.
+* **8:00 PM - 9:00 PM: Self-Care/Partner Time/Work Catch-Up:**  Flexible time for personal pursuits, connecting with your partner, or catching up on any urgent work tasks.
+* **9:00 PM - 10:00 PM:  Wind-Down/Sleep:**  Prepare for bed and get a good night's sleep.
+
+**Weekend Schedule:**
+
+* **Morning:**  More flexible wake-up time.  Family breakfast and time for weekend activities (sports, outings, etc.).
+* **Afternoon:**  Mix of family time, chores, and personal time.  Schedule specific blocks for errands and household tasks to free up other time for relaxation and fun.
+* **Evening:**  Relaxing family dinner, games, movies, or other activities.  Maintain a consistent bedtime routine even on weekends.
+
+
+**Tips for Success:**
+
+* **Batch similar tasks:**  Group errands, phone calls, and similar tasks together to save time and mental energy.
+* **Utilize technology:** Online grocery ordering, meal delivery services, and other tools can free up valuable time.
+* **Outsource when possible:** Consider hiring a cleaning service or other help if your budget allows.
+* **Communicate and delegate:** Involve family members in age-appropriate chores and responsibilities.
+* **Be flexible:**  Life happens. Be prepared to adjust your schedule as needed.  Don't be afraid to ask for help.
+* **Prioritize and say no:**  You can't do everything. Learn to prioritize what's most important and say no to commitments that don't align with your goals.
+* **Schedule self-care like any other appointment:** Treat self-care as a non-negotiable priority.  Even short bursts of 10-15 minutes can make a big difference.
+* **Regularly review and adjust:**  What works one week might not work the next.  Regularly evaluate your schedule and make adjustments as needed.
+
+Remember that finding a balance takes time and experimentation. Be patient with yourself, and celebrate your successes along the way!
