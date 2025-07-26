@@ -3,11 +3,12 @@
 ---
 
 📺 **Provide a Hosted Public Video Link 
-[my video](https://drive.google.com/file/d/10f4eNnFGIJz6N54fcy2ts2vd7yY_5F4P/view?usp=sharing) 
+[my video](https://drive.google.com/file/d/1we7HILDwhSmKeebRs3NfOxlLxOKAXxwq/view?usp=sharing) 
 
 ### Timestamps
 
-- **00:00–00:30** — Introduction & setup  
-- **00:30–02:30** — User input → Planning step  
-- **02:30–04:30** — Tool calls & memory retrieval  
-- **04:30–05:00** — Final output & edge-case handling
+- **00:00–00:14** — GitHub
+- **00:14–01:30** — Intro & Code Structure
+- **01:30–02:45** — User Input → Planning
+- **02:45–03:50** — Tool calls & memory retrieval  
+- **03:50–04:50** — Final output & edge-case handling
