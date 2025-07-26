@@ -2,95 +2,108 @@
 
 ## 🧠 Smart Agent Design Overview
 
-This document explains how the "MomBoss Family Planner" agent works — its reasoning, logic, and tool use.
+This document explains how the **"MomBoss Family Planner"** agent works — its reasoning, logic, and tool use.
 
 ---
 
 ### 1. 👣 Agent Workflow
 
-The agent follows this flow:
+The agent follows this process:
 
-  1. **Receive Input:**
+1. **User Input via Streamlit UI:**
+   - User enters a natural language prompt (e.g., "Plan something fun this weekend") through a web-based interface.
 
-User types a message in natural language, e.g., "Plan something fun for my kids this weekend"
+2. **Task Planning (`planner.py`):**
+   - Breaks the request into subtasks using prompt engineering for Gemini.
 
-  2. **Plan Tasks (planner.py):**
+3. **Task Execution (`executor.py`):**
+   - Uses Gemini Pro to generate a detailed, human-like family schedule.
 
-Breaks the user's intent into specific subtasks (e.g., “Find activity,” “Schedule event,” etc.) using a prompt to Gemini.
+4. **Save Plan (`memory.py`):**
+   - Stores the plan in a timestamped `.txt` file in the `plans/` folder.
 
-  3. **Execute Tasks (executor.py):**
+5. **Log Input Context (`memory.py`):**
+   - Adds the input to a `memory_log.txt` file to support simple memory/history.
 
-Uses Google Gemini Pro to generate a detailed, creative plan from the subtasks.
+6. **Create Google Calendar Event (`calendar_integration.py`):**
+   - Generates a simplified version of the plan and pushes it to the user’s Google Calendar.
 
-  4. **Save Plan (memory.py):**
+7. **Output Results in UI:**
+   - Full schedule is shown in the app, along with a link to the created calendar event.
 
-Stores the generated response to a `.txt` file in the `plans/` directory with a timestamp.
-
-  5. **Create Calendar Event (calendar_integration.py):**
-
-Sends a simplified summary to Google Calendar API and returns a calendar event link.
-
-  6. **Output:**
-
-Shows the Gemini response + Google Calendar event link in the console.
+8. **Extra Command ("view last"):**
+   - Allows the user to view their most recent saved plan on demand.
 
 ---
 
 ### 2. 🔧 Key Modules
 
-- **`planner.py`**
+- **`app.py`**  
+  - Streamlit-based user interface and input control.
 
-  - Prepares structured planning prompt based on user input.
+- **`planner.py`**  
+  - Breaks down requests into task prompts for Gemini.
 
-- **`executor.py`**
+- **`executor.py`**  
+  - Handles all Gemini API interactions.
 
-  - Calls Gemini API to get the main response.
+- **`memory.py`**  
+  - Logs input queries and stores responses to files.
 
-- **`memory.py`**
-
-  - Saves full plan with timestamp for local tracking.
-
-- **`calendar_integration.py`**
-
-  - Creates an event using OAuth and Google Calendar API.
+- **`calendar_integration.py`**  
+  - Uses Google Calendar API to create events with OAuth2 flow.
 
 ---
 
 ### 3. 🔌 Tool Integration
 
-- Gemini API (`google.generativeai`)
+- **Gemini API (`google.generativeai`)**
+  - Used for generating the plan based on structured prompts.
 
-  - Used in `executor.py` to generate creative content.
-
-- Google Calendar API
-
-  - Called via `calendar_integration.py` using `google-api-python-client` and `credentials.json`
+- **Google Calendar API**
+  - Integrated with `google-api-python-client` using `credentials.json` for OAuth2 authentication.
 
 ---
 
 ### 4. 🕵️ Observability & Testing
 
-- ✅ Console logging:
+- ✅ **Console Logging:**
+  - Logs Gemini output and Google Calendar event links.
 
-  - Prints Gemini response and calendar event creation URL.
+- ✅ **File Logging:**
+  - Full plans saved in `/plans/plan_TIMESTAMP.txt`.
 
-- ✅ Local logging:
+- ✅ **User Input History:**
+  - Last 5 inputs stored in `memory_log.txt`.
 
-  - Plans saved in `/plans/` as `.txt` for each user input.
+- ✅ **"view last" Command:**
+  - Loads most recent plan in Streamlit UI.
 
-- ❌ No automated test scripts (`TEST.sh`) or external observability tools added yet.
+- ❌ **No telemetry, unit tests, or exception tracking tools integrated.**
 
---- 
+---
 
 ### 5. ⚠️ Known Limitations
 
-- ⏳ First-time calendar use requires manual OAuth approval
+- ⏳ Manual OAuth consent required on first Google Calendar access.
 
-- 🧠 No memory retrieval yet (only save, no read)
+- 🧠 No deep memory retrieval or personalization yet (but `memory_log.txt` lays groundwork).
 
-- ❓ Ambiguous requests are passed directly to Gemini
+- ❓ May return generic responses for vague prompts.
 
-- 🐢 May slow down with poor internet during Gemini or Calendar API calls
+- 📡 Dependent on internet for Gemini and Calendar APIs.
+
+---
+
+### 🧭 Future Improvements
+
+- Add a full chatbot-style memory loop
+
+- Telegram bot integration for mobile use
+
+- Smart reminders or nudges via calendar
+
+- Child-age-specific plan generation
 
 ---
 
