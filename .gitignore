@@ -1,24 +1,20 @@
-.env
-.idea/
-.vscode/
-
-__pycache__/
+# Byte-compiled / cache
 *.py[cod]
-*.pyo
-*.pyd
-*.pyc
+__pycache__/
 
-venv/
-env/
-.venv/
-
-*.log
-
+# System
 .DS_Store
 Thumbs.db
 
+# Temp
 *.swp
 *.bak
 *.tmp
 
+# DB
 *.sqlite3
+
+# Secrets
+.env
+credentials.json
+token.pickle

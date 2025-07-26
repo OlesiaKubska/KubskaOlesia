@@ -1,11 +1,9 @@
-# src/main.py
-from dotenv import load_dotenv
-import os
 from dotenv import load_dotenv
 import os
 from planner import plan_tasks
 from executor import execute_tasks
 from memory import save_memory
+from calendar_integration import create_calendar_event
 
 load_dotenv(dotenv_path=".env")
 API_KEY = os.getenv("GEMINI_API_KEY")
@@ -24,6 +22,9 @@ def main():
         result = execute_tasks(tasks, API_KEY)
         save_memory(user_input, result)
         print("🤖 Agent:", result)
+
+        print("Creating event in Google Calendar...")
+        create_calendar_event()
 
 if __name__ == "__main__":
     main()
