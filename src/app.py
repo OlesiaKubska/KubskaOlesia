@@ -43,8 +43,8 @@ if st.button("Generate Plan") and user_input.lower() != "view last":
         # Include time block in prompt
         final_input = f"{user_input}. Please make a {time_block.lower()} plan."
         tasks = plan_tasks(final_input)
-        response = execute_tasks(tasks)
-        save_memory(response)
+        response = execute_tasks(tasks, api_key=API_KEY)
+        save_memory(user_input=final_input, agent_response=response)
         link = create_calendar_event(response)
 
         st.success("✅ AI Plan")
