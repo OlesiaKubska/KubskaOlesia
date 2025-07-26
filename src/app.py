@@ -40,7 +40,26 @@ if user_input.lower() == "view last":
 # Generate plan
 if st.button("Generate Plan") and user_input.lower() != "view last":
     with st.spinner("🧠 Thinking..."):
-        final_input = f"{user_input}. Please make a {time_block.lower()} plan."
+        final_input = f"""
+You're a professional family assistant who helps busy moms manage their day. 
+Generate a detailed, realistic, and fun schedule based on this user request: "{user_input}".
+Make the schedule specific for the {time_block.lower()}.
+
+Use the following format:
+## [Title of the Plan]
+
+**Goal:** [Short 1-sentence purpose of this block]
+
+**Time** | **Activity** | **Details/Tips**
+-------- | ------------ | ----------------
+6:00 AM  | Example Task | Short description...
+
+Make sure to:
+- Balance structure with flexibility.
+- Include both responsibilities and bonding time.
+- Use times in 15–30 minute blocks.
+"""
+
         tasks = plan_tasks(final_input)
         response = execute_tasks(tasks, api_key=API_KEY)
         save_memory(user_input=final_input, agent_response=response)
