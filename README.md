@@ -1,42 +1,104 @@
-# Agentic AI App Hackathon Template
+# 👩‍💻 MomBoss Family Planner – Agentic AI Hackathon 2025
 
-Welcome! This repository is your starting point for the **Agentic AI App Hackathon**. It includes:
+Welcome to my hackathon project! This AI agent helps busy moms with multiple children organize meaningful family time by using natural language input to generate activity plans and automatically schedule events in Google Calendar.
 
-- A consistent folder structure  
-- An environment spec (`environment.yml` or `Dockerfile`)  
-- Documentation placeholders to explain your design and demo
+---
 
-## 📋 Submission Checklist
+## 🧠 What It Does
 
-- [ ] All code in `src/` runs without errors  
-- [ ] `ARCHITECTURE.md` contains a clear diagram sketch and explanation  
-- [ ] `EXPLANATION.md` covers planning, tool use, memory, and limitations  
-- [ ] `DEMO.md` links to a 3–5 min video with timestamped highlights  
+👤 User types any request (e.g. _"Plan something fun for my kids this weekend"_)
 
+📋 Agent breaks it into steps using a task planner
 
-## 🚀 Getting Started
+🔑 It calls Google Gemini API to enhance output
 
-1. **Clone / Fork** this template.  Very Important. Fork Name MUST be the same name as the teamn name
+🗂 Saves the plan to file in `plans/`
 
+📅 Automatically creates a Google Calendar event via OAuth
 
-## 📂 Folder Layout
+---
 
-![Folder Layout Diagram](images/folder-githb.png)
+## 🚀 How to Run
 
+1. **Clone the repository**  
+```bash
+git clone https://github.com/OlesiaKubska/KubskaOlesia.git
+cd KubskaOlesia
+```
 
+2. **Install requirements**
 
-## 🏅 Judging Criteria
+```bash
+pip install -r requirements.txt
+```
 
-- **Technical Excellence **  
-  This criterion evaluates the robustness, functionality, and overall quality of the technical implementation. Judges will assess the code's efficiency, the absence of critical bugs, and the successful execution of the project's core features.
+3. **Create .env file with Gemini API key**
 
-- **Solution Architecture & Documentation **  
-  This focuses on the clarity, maintainability, and thoughtful design of the project's architecture. This includes assessing the organization and readability of the codebase, as well as the comprehensiveness and conciseness of documentation (e.g., GitHub README, inline comments) that enables others to understand and potentially reproduce or extend the solution.
+```ini
+GEMINI_API_KEY=your_key_here
+```
 
-- **Innovative Gemini Integration **  
-  This criterion specifically assesses how effectively and creatively the Google Gemini API has been incorporated into the solution. Judges will look for novel applications, efficient use of Gemini's capabilities, and the impact it has on the project's functionality or user experience. You are welcome to use additional Google products.
+4. **Make sure you have credentials.json (not committed) for Google Calendar API**
 
-- **Societal Impact & Novelty **  
-  This evaluates the project's potential to address a meaningful problem, contribute positively to society, or offer a genuinely innovative and unique solution. Judges will consider the originality of the idea, its potential real‑world applicability, and its ability to solve a challenge in a new or impactful way.
+- Enable Google Calendar API
 
+- Download credentials.json to src/
 
+5. **Run the app**
+
+```bash
+python src/main.py
+```
+
+## 📁 Project Structure
+
+```bash
+
+├── src/
+│   ├── main.py                 # Main agent loop
+│   ├── planner.py              # Task planner
+│   ├── executor.py             # Gemini API call
+│   ├── memory.py               # Memory logging
+│   └── calendar_integration.py # Google Calendar integration
+├── plans/                      # Saved plans
+├── .env                        # Secret API key (not tracked)
+├── .gitignore
+├── README.md
+├── ARCHITECTURE.md
+├── EXPLANATION.md
+├── DEMO.md
+```
+
+## 🔧 Technologies
+
+- 🐍 Python 3.13
+
+- 🌐 Google Gemini API
+
+- 📅 Google Calendar API (OAuth2)
+
+- 💾 dotenv, google-auth, google-api-python-client
+
+## 📌 Features
+- ✅ Conversational AI agent
+
+- 🧠 Task planning logic
+
+- 🧩 Gemini integration
+
+- 🗓 Google Calendar auto events
+
+- 📝 Plan history saved to .txt
+
+## ⚠️ Notes
+- credentials.json and token.pickle are excluded via .gitignore
+
+- Make sure Google OAuth is set up locally for Calendar access
+
+- Token is stored as token.pickle after the first run
+
+## 🎥 Demo
+See [DEMO.md](DEMO.md) for a link to the walkthrough video with timestamps.
+
+## 🏁 Good luck to all hackers!
+Made with 💡 and ☕ by Olesia Kubska
