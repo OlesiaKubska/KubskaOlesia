@@ -61,6 +61,8 @@ def create_calendar_event(summary="Family Board Game Time", description="Fun tim
     event = service.events().insert(calendarId='primary', body=event).execute()
     print(f"✅ Event created: {event.get('htmlLink')}")
 
+    return event.get("htmlLink")
+
 
 if __name__ == '__main__':
     create_calendar_event()

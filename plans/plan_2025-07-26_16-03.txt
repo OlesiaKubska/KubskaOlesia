@@ -1,0 +1,75 @@
+🧑 User: 
+        You're a professional family assistant who helps busy moms manage their day. 
+        Generate a detailed, realistic, and fun schedule based on this user request: "my plan on Monday".
+        Make the schedule specific for the afternoon.
+
+        Use the following format:
+        ## [Title of the Plan]
+
+        **Goal:** [Short 1-sentence purpose of this block]
+
+        **Time** | **Activity** | **Details/Tips**
+        -------- | ------------ | ----------------
+        6:00 AM  | Example Task | Short description...
+
+        Make sure to:
+        - Balance structure with flexibility.
+        - Include both responsibilities and bonding time.
+        - Use times in 15–30 minute blocks.
+        
+
+🤖 Agent:
+## Monday Afternoon Recharge & Reconnect
+
+**Goal:** To create a smooth transition from the workday into family time, balancing productivity with connection and fun.
+
+
+**Time** | **Activity** | **Details/Tips**
+-------- | ------------ | ----------------
+1:00 PM  | Business Power Hour | Dedicate this hour to focused work. Close your office door (if possible) or find a quiet space. Tackle the most pressing task on your list. Set a timer for 50 minutes of focused work followed by a 10-minute break.
+1:00 PM | Kids' Lunch (if applicable) |  If younger kids are still home, have a simple, prepped lunch ready to go.  Encourage independence. Older kids can make their own.
+2:00 PM | Business Wrap-up/Transition | Finish any immediate emails or tasks.  Mentally shift gears from "work mode" to "family mode."  Put away work materials.
+2:15 PM |  Kid Connection Time  |  Spend 15 minutes individually with each child, if possible. Even short bursts of focused attention make a difference. Ask about their day, their interests, or simply cuddle. If not individually possible, gather everyone for a quick game or story.
+2:45 PM | Snack & Free Play/Outdoor Time | Prepare a healthy snack (fruit, veggies, yogurt) and let kids choose an activity. Encourage outdoor play if weather permits. Set clear boundaries about screen time. This also gives you time to tidy up, prep dinner, or take a few minutes to yourself.
+3:30 PM |  Creative Corner / Learning Activity  |  Dedicate 30 minutes to a stimulating activity. This could be art projects, reading aloud, a science experiment, building with LEGOs, board games, or practicing a musical instrument.  Choose something that engages different age groups and learning styles.
+4:00 PM | Homework Help (if applicable) |  Supervise and assist older kids with homework. Designate a specific homework zone to minimize distractions. Younger kids can engage in quiet play or coloring nearby.
+4:30 PM | Dinner Prep  | Start preparing dinner. Get the kids involved with age-appropriate tasks like setting the table, washing vegetables, or stirring ingredients.
+5:00 PM |  Family Dinner  | Enjoy dinner together as a family. Make it a screen-free zone and encourage conversation.
+5:30 PM |  Free Time/Family Activity | This could be family game night, reading aloud, a walk around the neighborhood, or starting a family project.  Choose an activity everyone enjoys.
+6:00 PM |  Bath Time/Bedtime Routine (Younger Kids) | Start the bedtime routine for younger children.
+6:30 PM |  Quiet Time/Reading (Older Kids) |  Encourage older kids to read or engage in quiet activities as the younger ones settle down.
+7:00 PM |  Continued Bedtime Routine/Story Time | Continue the bedtime routine as needed.
+
+**Flexibility Note:**  This is a suggested schedule. Adapt it to your family's specific needs and preferences. Some days may require more focus on work, while others might allow for a longer family outing. The key is to find a balance that works for you and your family.
+
+This is a sample schedule, and you'll need to adjust it based on your specific work hours, children's ages and schedules, and personal preferences. The key is to block out time and protect it as much as possible.
+
+**Weekday Schedule:**
+
+* **6:00 AM - 7:00 AM: Self-Care/Me Time:** Wake up before the rest of the family. Use this time for exercise, meditation, journaling, or simply enjoying a quiet cup of coffee.  This sets a positive tone for the day.
+* **7:00 AM - 8:00 AM: Family Time:**  Breakfast with the family, get kids ready for school/daycare.
+* **8:00 AM - 4:00 PM/5:00 PM: Work Block:** Focused work time.  Schedule meetings, deep work sessions, and other demanding tasks during this period.  If working from home, incorporate short breaks for quick chores or connecting with family.
+* **5:00 PM - 6:00 PM: Family Time:** After work/school connection.  This could be playtime with kids, preparing dinner together, or simply chatting about the day.
+* **6:00 PM - 7:00 PM: Dinner:** Family dinner.
+* **7:00 PM - 8:00 PM: Family Time:**  Bath time, story time, homework help, or other family activities.
+* **8:00 PM - 9:00 PM:  Wind-Down/Self-Care:**  Prepare for the next day, read, take a bath, or engage in relaxing activities.
+* **9:00 PM: Bedtime:** Aim for consistent sleep for better energy and focus.
+
+**Weekend Schedule:**
+
+* **Morning:** Family time –  Brunch, outdoor activities, errands together.
+* **Afternoon:** Flexible time –  Could include more family time, personal appointments, a longer self-care block (massage, hobby), or catching up on household chores.
+* **Evening:**  Family dinner and relaxing evening routine.
+
+**Tips for Making it Work:**
+
+* **Batch similar tasks:** Group errands, cooking prep, or work tasks to maximize efficiency.
+* **Utilize technology:** Use online grocery ordering, scheduling apps, and other tools to save time.
+* **Outsource if possible:** Consider hiring a cleaning service or using a meal delivery service if your budget allows.
+* **Communicate with family:**  Ensure everyone understands the schedule and is on board.
+* **Be flexible:** Life happens. Be prepared to adjust your schedule as needed. Don't strive for perfection, aim for progress.
+* **Prioritize and say no:**  Learn to say no to non-essential commitments to protect your time and energy.
+* **Don't neglect self-care:** It's not selfish, it's essential for your well-being and ability to manage everything else.  Even 15 minutes can make a difference.
+
+
+Remember, this is just a template. Experiment and find what works best for you and your family. The goal is to create a structure that supports both your responsibilities and your well-being.

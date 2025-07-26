@@ -1,0 +1,75 @@
+🧑 User: 
+        You're a professional family assistant who helps busy moms manage their day. 
+        Generate a detailed, realistic, and fun schedule based on this user request: "my plan on Monday".
+        Make the schedule specific for the morning.
+
+        Use the following format:
+        ## [Title of the Plan]
+
+        **Goal:** [Short 1-sentence purpose of this block]
+
+        **Time** | **Activity** | **Details/Tips**
+        -------- | ------------ | ----------------
+        6:00 AM  | Example Task | Short description...
+
+        Make sure to:
+        - Balance structure with flexibility.
+        - Include both responsibilities and bonding time.
+        - Use times in 15–30 minute blocks.
+        
+
+🤖 Agent:
+## Monday Morning Power Hour & Kid Launch
+
+**Goal:** To start the day with a sense of calm, connection, and accomplishment, setting a positive tone for the entire week.
+
+**Time** | **Activity** | **Details/Tips**
+-------- | ------------ | ----------------
+6:00 AM  | Quiet Time/Mindfulness | Wake up before the kids. Enjoy 15 minutes of quiet reflection, meditation, or journaling. Set an intention for the day.  *Tip: Prep coffee the night before!*
+6:15 AM | Light Exercise & Shower |  A quick 15-minute workout or stretching routine followed by a refreshing shower. *Tip: Have workout clothes laid out.*
+6:30 AM | Kids' Wake-Up & Snuggles | Wake the kids gently. Spend a few minutes cuddling and connecting before the hustle begins. *Tip: Play calming music to ease the transition.*
+6:45 AM |  Breakfast Prep & Family Time |  Prepare a quick and healthy breakfast. Encourage the kids to help with setting the table. *Tip: Have a breakfast rotation to simplify planning and involve older kids in meal prep.*
+7:00 AM | Breakfast Together | Sit down as a family and enjoy breakfast. Use this time to chat and connect. No phones at the table!  *Tip:  Even 10 minutes of focused family time makes a difference.*
+7:15 AM | Lunch Packing & Backpack Check | Pack lunches for the kids and ensure they have everything they need for school.  *Tip:  Pack lunches the night before to save time.*
+7:30 AM | Dress & Get Ready | Help younger kids get dressed while older kids finish getting ready independently. *Tip: Lay out clothes the night before to avoid morning scrambles.*
+7:45 AM | Morning Motivation & Out the Door |  A quick family huddle with affirmations or a fun song to boost everyone's spirits. Head out the door for school and work.  *Tip: Keep a basket by the door for last-minute items like library books or sports equipment.*
+8:00 AM |  Business Focus Time | Dedicated time for focused work. *Tip: Use a timer and tackle the most important task first.* 
+8:30 AM |  Client Calls/Emails | Respond to emails and schedule/make client calls. *Tip: Batch similar tasks together for increased efficiency.*
+9:00 AM |  Team Check-in/Project Planning | Connect with your team, delegate tasks, and plan for the week ahead. *Tip:  Use a project management tool to stay organized.*
+
+
+
+This is a sample schedule, and you'll need to adapt it based on your family's needs, work hours, and personal preferences.  The key is to block out time and stick to it as much as possible.  Flexibility is important, but having a framework helps maintain balance.
+
+**Weekday Schedule:**
+
+* **6:00 AM - 7:00 AM:  Self-Care/Me Time:**  Wake up before everyone else.  Use this time for exercise, meditation, journaling, or simply enjoying a quiet cup of coffee.
+* **7:00 AM - 8:00 AM: Family Time:**  Breakfast with family, get kids ready for school/daycare.
+* **8:00 AM - 5:00 PM: Work Block:** This is a large block, but it can be broken down further depending on your work schedule.  Include short breaks throughout the day for lunch and a quick walk or stretch.
+    * **12:00 PM - 1:00 PM: Lunch Break:**  Try to step away from your workspace if possible.
+* **5:00 PM - 7:00 PM: Family Time:**  Dinner preparation, family dinner, help with homework, after-school activities.
+* **7:00 PM - 8:00 PM: Family Time/Wind Down:** Bath time for kids, bedtime stories, quiet playtime.
+* **8:00 PM - 9:00 PM: Self-Care/Me Time:**  Relaxing activity like reading, a bath, or catching up with a friend.
+* **9:00 PM - 10:00 PM: Prepare for the next day/Wind Down:** Pack lunches, lay out clothes, quick tidy-up.
+* **10:00 PM: Bedtime:**  Aim for consistent sleep.
+
+**Weekend Schedule:**
+
+* **Morning:** Family Time:  Brunch, outdoor activities, errands, or a special family project.
+* **Afternoon:** Flexible Time: This could be a mix of family time, personal errands, or some dedicated work time if needed. Try to schedule at least one longer block for focused self-care or a hobby.
+* **Evening:** Family Time/Wind Down:  Similar to weekdays, but perhaps with a movie night or game night.
+
+
+**Tips for Success:**
+
+* **Batch similar tasks:**  Combine errands, cook multiple meals at once, or tackle similar work tasks together.
+* **Use a planner or calendar:**  Digital or paper, whatever works for you.  Schedule everything, including self-care.
+* **Communicate with your family:**  Let everyone know the schedule and expectations.
+* **Be flexible:**  Life happens.  Don't be afraid to adjust the schedule when needed.
+* **Prioritize:**  Identify your most important tasks for each day and focus on those first.
+* **Don't be afraid to ask for help:**  From your partner, family, friends, or even professional help if needed.
+* **Outsource where possible:**  Grocery delivery, cleaning service, etc. can free up valuable time.
+* **Protect your self-care time:**  This isn't selfish; it's essential for your well-being and your ability to manage everything else.
+
+
+Remember, finding the right balance takes time and experimentation.  Start with a basic schedule and adjust it based on what works for you and your family.  The most important thing is to be intentional about how you spend your time and prioritize your well-being along with the needs of your family.

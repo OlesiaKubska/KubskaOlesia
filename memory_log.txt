@@ -124,3 +124,9 @@ This structured approach allows for dedicated time blocks for work, family, and 
 
 
 [2025-07-26 12:11] my plan on Monday
+[2025-07-26 14:37] Plan a fun morning with my 3 kids
+[2025-07-26 14:41] do something cool next week
+[2025-07-26 15:07] Plan a fun morning with my 3 kids
+[2025-07-26 15:17] my plan on Monday
+[2025-07-26 16:03] my plan on Monday
+[2025-07-26 16:06] do something cool next week
