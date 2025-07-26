@@ -1,6 +1,6 @@
 # 🧱 ARCHITECTURE
 
-This document outlines the architecture of the **"MomBoss Family Planner"**, an AI assistant designed to help busy moms plan fun, balanced days with their children — including automatic calendar integration.
+This document outlines the architecture of the **"MomBoss Family Planner"**, an AI assistant designed to help busy moms plan fun, balanced days with their children — including automatic calendar integration and simple memory.
 
 ---
 
@@ -8,7 +8,7 @@ This document outlines the architecture of the **"MomBoss Family Planner"**, an 
 
 ```
 ┌────────────┐
-│  main.py   │ ← Central control loop
+│  app.py    │ ← Streamlit front-end UI
 └────┬───────┘
      │
      ▼
@@ -30,11 +30,19 @@ This document outlines the architecture of the **"MomBoss Family Planner"**, an 
 ```
 ---
 
+## 🧠 Extra Features
+
+- 🗂 `view last` **command** — Shows last saved plan from `/plans/`
+
+- 📚 `history` **command** — Displays last 5 logged user requests
+
+---
+
 ## 🔌 Integrations
 
-- 🧠 **Gemini API** – Handles the logic of natural language planning.
-
-- 📅 **Google Calendar API (OAuth2)** – Adds events directly to user calendar.
+- 🧠 **Gemini API (google.generativeai)** – Used for creative plan generation
+- 📅 **Google Calendar API (OAuth2)** – Adds events to calendar calendar.
+- 🖥 **Streamlit** – Frontend interface
 
 ---
 
@@ -42,53 +50,51 @@ This document outlines the architecture of the **"MomBoss Family Planner"**, an 
 
 ```
 src/
-├── main.py                 # Main conversation loop
+├── app.py                  # Streamlit UI
+├── main.py                 # CLI fallback (optional)
 ├── planner.py              # Task planning
 ├── executor.py             # Gemini API interaction
-├── memory.py               # Logging memory (plans)
+├── memory.py               # Logging memory & user input
 ├── calendar_integration.py # Google Calendar logic
 plans/                      # Saved plan .txt files
 .env                        # API key (ignored)
+memory_log.txt              # Optional user prompt log
 ```
 ---
 
 ## 📝 Logging & Observability
 
-- Logs each plan to a timestamped `.txt` file in `plans/`
+- ✅ Plans saved to `.txt` in `plans/`
 
-- Google Calendar event creation success printed to console with link
+- ✅ User inputs saved to `memory_log.txt`
 
-- No analytics or telemetry beyond local file logging
+- ✅ Streamlit console prints Gemini output and event link
+  
+- ❌ No advanced telemetry, tracing or exception analytics
 
 ---
 
 ## 🛠 Technologies Used
 
 - Python 3.13
-
-- dotenv
-
-- google-api-python-client
-
-- google-auth
-
-- google-auth-oauthlib
-
-- Gemini Pro (via `google.generativeai`)
+- Streamlit
+- Google Gemini API
+- Google Calendar API
+- `dotenv`, `google-auth`, `google-api-python-client`
 
 ---
 
 ## 🔐 Secrets & Security
 
-- `.env` file stores the Gemini API key
+- `.env` contains Gemini API key (not tracked)
 
-- `credentials.json` and `token.pickle` are ignored and not tracked
+- `credentials.json` and `token.pickle` are ignored via `.gitignore`
 
-- All secrets excluded via `.gitignore`
+- Never commit secrets to the repo
 
 ---
 
-This modular design makes it easy to test individual parts, and extend the planner to include memory retrieval or front-end integration in the future.
+✅ This modular and UI-enhanced architecture allows for simple expansion — including future Telegram bot integration, memory recall, or family profile customization.
 
 
 
