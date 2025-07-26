@@ -1,23 +1,13 @@
 # Demo Video
 
-Please record a 3–5 minute walkthrough showing:
-
-- The problem you solve  
-- End-to-end agent behavior on a representative example  
-- Highlighted “agentic” steps (planning, tool calls, memory use)
-
 ---
 
-📺 **Provide a Hosted Public Video Link (YouTube unlisted / Loom / MP4):**  MUST BE ON A HOS
-https://your.video.link.here
-
-PLEASE DO NOT UPLOAD RAW VIDOE FILES. These submissions will not be reviewed.
+📺 **Provide a Hosted Public Video Link 
+[my video](https://drive.google.com/file/d/10f4eNnFGIJz6N54fcy2ts2vd7yY_5F4P/view?usp=sharing) 
 
 ### Timestamps
 
 - **00:00–00:30** — Introduction & setup  
-- **00:30–01:30** — User input → Planning step  
-- **01:30–02:30** — Tool calls & memory retrieval  
-- **02:30–03:30** — Final output & edge-case handling
-
-- Vidoes longer than 5 minutes may not be reviewd. 
+- **00:30–02:30** — User input → Planning step  
+- **02:30–04:30** — Tool calls & memory retrieval  
+- **04:30–05:00** — Final output & edge-case handling
