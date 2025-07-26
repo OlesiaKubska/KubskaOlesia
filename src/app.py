@@ -25,22 +25,21 @@ time_block = st.selectbox("🕒 Select time range:", ["Full day", "Morning", "Af
 # Input
 user_input = st.text_input("📄 What would you like to plan?", placeholder="Plan something fun this weekend or type 'view last'...")
 
-# Check for 'view last'
+# Handle 'view last' before button
 if user_input.lower() == "view last":
     try:
         plans_dir = "plans/"
-        last_file = sorted(os.listdir(plans_dir))[-1]
+        last_file = sorted([f for f in os.listdir(plans_dir) if f.startswith("plan_")], reverse=True)[0]
         with open(os.path.join(plans_dir, last_file), "r", encoding="utf-8") as f:
             content = f.read()
         st.success("✅ Last Plan:")
-        st.markdown(content)
+        st.text_area("🗂️ View Last Plan", content, height=400)
     except Exception as e:
         st.error(f"⚠️ Could not load last plan: {e}")
 
 # Generate plan
 if st.button("Generate Plan") and user_input.lower() != "view last":
-    with st.spinner("🎀 Thinking..."):
-        # Include time block in prompt
+    with st.spinner("🧠 Thinking..."):
         final_input = f"{user_input}. Please make a {time_block.lower()} plan."
         tasks = plan_tasks(final_input)
         response = execute_tasks(tasks, api_key=API_KEY)
