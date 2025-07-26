@@ -1,4 +1,4 @@
-# 👩‍💻 MomBoss Family Planner – Agentic AI Hackathon 2025
+# 👩‍👧‍👦 MomBoss Family Planner – Agentic AI Hackathon 2025
 
 Welcome to my hackathon project! 
 This AI agent helps **busy moms with multiple children** organize meaningful family time by using natural language input to generate activity plans and automatically schedule events in Google Calendar.
