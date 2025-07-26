@@ -1,10 +1,10 @@
 import streamlit as st
+import os
+from dotenv import load_dotenv
 from planner import plan_tasks
 from executor import execute_tasks
 from memory import save_memory
 from calendar_integration import create_calendar_event
-import os
-from dotenv import load_dotenv
 
 # Load API key
 load_dotenv()
@@ -14,22 +14,41 @@ if not API_KEY:
     st.error("❌ API key not found. Please check your .env file.")
     st.stop()
 
+# UI setup
 st.set_page_config(page_title="MomBoss Family Planner", page_icon="👩‍👧‍👦")
-
 st.title("👩‍👧‍👦 MomBoss Family Planner")
 st.write("Let AI help you plan meaningful time with your children.")
 
-user_input = st.text_input("📝 What would you like to plan?", placeholder="Plan something fun this weekend...")
+# Time selection
+time_block = st.selectbox("🕒 Select time range:", ["Full day", "Morning", "Afternoon"])
 
-if st.button("Generate Plan") and user_input:
-    with st.spinner("🧠 Thinking..."):
-        tasks = plan_tasks(user_input)
-        result = execute_tasks(tasks, API_KEY)
-        save_memory(user_input, result)
-        event_link = create_calendar_event(user_input)
+# Input
+user_input = st.text_input("📄 What would you like to plan?", placeholder="Plan something fun this weekend or type 'view last'...")
 
-    st.subheader("✅ AI Plan")
-    st.write(result)
+# Check for 'view last'
+if user_input.lower() == "view last":
+    try:
+        plans_dir = "plans/"
+        last_file = sorted(os.listdir(plans_dir))[-1]
+        with open(os.path.join(plans_dir, last_file), "r", encoding="utf-8") as f:
+            content = f.read()
+        st.success("✅ Last Plan:")
+        st.markdown(content)
+    except Exception as e:
+        st.error(f"⚠️ Could not load last plan: {e}")
 
-    if event_link:
-        st.success(f"📅 Calendar Event Created! [View it here]({event_link})")
+# Generate plan
+if st.button("Generate Plan") and user_input.lower() != "view last":
+    with st.spinner("🎀 Thinking..."):
+        # Include time block in prompt
+        final_input = f"{user_input}. Please make a {time_block.lower()} plan."
+        tasks = plan_tasks(final_input)
+        response = execute_tasks(tasks)
+        save_memory(response)
+        link = create_calendar_event(response)
+
+        st.success("✅ AI Plan")
+        st.markdown(response)
+
+        if link:
+            st.markdown(f"[📅 View Calendar Event]({link})")
